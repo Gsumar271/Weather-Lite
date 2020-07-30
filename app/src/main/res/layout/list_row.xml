@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="#8c4e4e4e">
+
+    <!--<View-->
+        <!--android:id="@+id/lineView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="4px"-->
+        <!--android:background="#FFF" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:textColor="#FFF"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="#FFF"
+                android:id="@+id/itemDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/itemWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Wind: 0 m/s"
+                android:textSize="16dp"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/itemPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Pressure: 0 hpa"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/itemHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity: 0 %"
+                android:textColor="#FFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/itemIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/itemTemperature"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 °C"
+            android:textSize="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/itemIcon"
+            android:layout_alignRight="@+id/itemIcon"
+            android:layout_alignEnd="@+id/itemIcon" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
